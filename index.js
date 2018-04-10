@@ -30,6 +30,6 @@ function makeInt(x) {
 
 function preserveDecimal(x) {
   var parsed = parseFloat(x);
-  if (isNaN(parsed)) { return Nan }
+  if (isNaN(parsed)) { return NaN }
   return parsed;
 }
