@@ -25,10 +25,11 @@ function dec(n) {
 function makeInt(x) {
    var parsed = parseInt(x, 10);
   if (isNaN(parsed)) { return NaN }
-  return parsed * 1;
+  return parsed;
 }
 
 function preserveDecimal(x) {
   var parsed = parseFloat(x);
-  
+  if (isNan(parsed)) { return Nan }
+  return parsed;
 }
